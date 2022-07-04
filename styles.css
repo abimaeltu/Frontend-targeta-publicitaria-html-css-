@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Colores a utilizar */
+:root{
+    --cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --darkblue: hsl(212, 21%, 14%);
+    --grayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --dark_green: hsl(158, 86%, 8%);
+}
+body{
+    font-size: 14px;
+    background-color: var(--cream);
+}
+
+.contenido{
+    background-color: var(--white);
+    width: 345px;
+    height: 615px;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+.imagen{
+    width: 100%;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--grayishblue);
+    margin: 10px 25px;
+    font-size: 1rem;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    margin: 5px 25px;
+    font-size: 2rem;
+    line-height: 35px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 25px;
+    color: var(--grayishblue);
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+button{
+    display: block;
+    background-color: var(--cyan);
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--white);
+    margin: 0 25px;
+    height: 40px;
+    width: 300px;
+    font-weight: 700;
+    margin: auto;
+}
+button:hover{
+    background-color: var(--dark_green);
+    cursor: pointer;
+}
+.carrito{
+    margin-right: 1rem;
+}
+.precios{
+    display: flex;
+    line-height: 1.5rem;
+    margin: 40px 12px 20px 25px;
+}
+.promo{
+    color: var(--cyan);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    margin-right: 1.5rem;
+}
+.normal{
+    font-family: 'Fraunces', serif;
+    color: var(--grayishblue);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* --------------------Vista de Escritorio---------------- */
+
+@media (min-width: 600px)  {
+
+    .contenido{
+        display: flex;
+        width: 600px;
+        height: 420px;
+    }
+    .seccion_imagen{
+        content: url('images/image-product-desktop.jpg');
+        width: 300px;
+    }
+    .seccion_contenido{
+        width: 300px;
+        margin: 15px 0px;
+    }
+    p{
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+    button{
+        height: 40px;
+        width: 240px;
+    }
+}
